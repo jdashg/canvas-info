@@ -1,0 +1,14 @@
+{
+   "manifest_version": 2,
+   "name": "canvas-info",
+   "version": "0.1",
+
+   "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*", "file://*/*"],
+        "js": ["out/canvas-info.content.js"],
+        "run_at": "document_start",
+        "all_frames": true
+      }
+   ]
+}
